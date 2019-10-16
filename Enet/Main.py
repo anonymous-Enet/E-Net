@@ -47,7 +47,7 @@ parser.add_argument('--embedding-size', default=128,
                     help='embedding size of node2vec')
 parser.add_argument('--use-attribute', action='store_true', default=True,
                     help='whether to use node attributes')
-parser.add_argument('--lazy-subgraph', action='store_true', default=False,
+parser.add_argument('--lazy-subgraph', action='store_true', default=True,
                     help='whether to use lazy subgraph extraction')
 parser.add_argument('--multi-subgraph', default=3,
                     help='number of subgraphs to extract for each queried nodes')
