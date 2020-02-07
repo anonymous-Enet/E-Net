@@ -32,17 +32,32 @@ How to run E-net
     
     python Main.py -h
     
-    usage: Main.py [-h][--data-name] [--use-embedding ] [--num-walks] [--learning-rate] [--reg-smooth] [--smooth-coef] [--trainable-noise]
+    usage: Main.py [-h][--data-name] [--save-name] [--max-train-num] [--no-cuda] [--missing-ratio] [--split-ratio] [--neg-pos-ratio] [--use-attribute] [--use-embedding] [--embedding-size] [--lazy-subgraph] [--max-nodes-per-hop] [--num-walks] [--multi-subgraph] [--reg-smooth] [--smooth-coef] [--trainable-noise] [--early-stop] [--early-stop-patience] [--learning-rate] 
     
     optional arguments:
       -h, --help            show this help message and exit
-      --dataset             str, select the dataset. 
-      --use-embedding       bool, whether to use node2vec node embeddings as additional information.
-      --num-walks           int, number of walks for each node when performing Lazy Subgraph Extraction. 
-      --learning-rate	    float, the learning rate. 
+      --data-name           str, select the dataset. 
+      --save-name           str, the name of saved model. 
+      --max-train-num       int, the maximum number of training links.
+      --no-cuda             bool, whether to disables CUDA training.
+      --seed                int, set the random seed.
+      --test-ratio          float, the ratio of test links.
+      --missing-ratio       float, the ratio of missing links.
+      --split-ratio         str, the split rate of train, val and test links
+      --neg-pos-ratio       float, the ratio of negative/positive links
+      --use-attribute       bool, whether to utilize node attribute. 
+      --use-embedding       bool, whether to utilize the information from node2vec node embeddings.
+      --embedding-size      int, the embedding size of node2vec
+      --lazy-subgraph        bool, whether to use lazy subgraph extraction.
+      --max-nodes-per-hop   int, the upper bound the number of nodes per hop when performing Lazy Subgraph Extraction. 
+      --num-walks           int, thenumber of walks for each node when performing Lazy Subgraph Extraction. 
+      --multi-subgraph      int, the number of subgraphs to extract for each queried nodes
       --reg-smooth          bool, whether to use auxiliary denoising regularization.
       --smooth-coef         float, the coefficient of auxiliary denoising regularization. 
       --trainable-noise     bool, whether to let the Noisy link detection layer trainable.
+      --early-stop          bool, whether to use early stopping.
+      --early-stop-patience int, the patience for early stop.
+      --learning-rate	    float, the learning rate. 
 
 To reproduce the results that reported in the paper, you can run the following command:
 
