@@ -23,7 +23,7 @@ In addition, CUDA 8.0 has been used.
 
 Input Format
 -----
-An example data format is given where dataset is *.mat format and *.score is some heuristic scores calculated in advance.
+An example data format is given where dataset is in * *.mat* format and * *.score* is some heuristic scores calculated in advance.
 
 How to run E-net
 -----
