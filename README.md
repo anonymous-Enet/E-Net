@@ -34,10 +34,7 @@ An example data format is given in ```Enet/data``` where dataset is in ```*.mat`
 
 How to run E-net
 -----
-    
-    cd Enet
-    
-The help information of the main script scripts/run.py is listed as follows:
+The help information of the main script ```Enet/Main.py``` is listed as follows:
 
     python Main.py -h
     
