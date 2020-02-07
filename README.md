@@ -39,7 +39,10 @@ How to run E-net
     
     python Main.py -h
     
-    usage: Main.py [-h][--data-name] [--save-name] [--max-train-num] [--no-cuda] [--missing-ratio] [--split-ratio] [--neg-pos-ratio] [--use-attribute] [--use-embedding] [--embedding-size] [--lazy-subgraph] [--max-nodes-per-hop] [--num-walks] [--multi-subgraph] [--reg-smooth] [--smooth-coef] [--trainable-noise] [--early-stop] [--early-stop-patience] [--learning-rate] 
+    usage: Main.py [-h][--data-name] [--save-name] [--max-train-num] [--no-cuda] [--missing-ratio] 
+    [--split-ratio] [--neg-pos-ratio] [--use-attribute] [--use-embedding] [--embedding-size] 
+    [--lazy-subgraph] [--max-nodes-per-hop] [--num-walks] [--multi-subgraph] [--reg-smooth] 
+    [--smooth-coef] [--trainable-noise] [--early-stop] [--early-stop-patience] [--learning-rate] 
     
     optional arguments:
       -h, --help                show this help message and exit
