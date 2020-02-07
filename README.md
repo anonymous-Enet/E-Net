@@ -64,7 +64,7 @@ How to run E-net
       --trainable-noise         bool, whether to let the Noisy link detection layer trainable.
       --early-stop              bool, whether to use early stopping.
       --early-stop-patience     int, the patience for early stop.
-      --learning-rate	        float, the learning rate. 
+      --learning-rate           float, the learning rate. 
 
 To reproduce the results that reported in the paper, you can run the following command:
 
