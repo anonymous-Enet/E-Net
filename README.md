@@ -71,4 +71,5 @@ How to run E-net
 
 To reproduce the results that reported in the paper, you can run the following command:
 
-    python Main.py --data-name citeseer --use-embedding --num-walks 5 --learning-rate 1e-4 --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
+    python Main.py --data-name citeseer --use-embedding --num-walks 5 --learning-rate 1e-4 
+    --noise-hidden-dim 500 --use-sig --use-soft --reg-smooth --smooth-coef 1e-4 --trainable-noise 
