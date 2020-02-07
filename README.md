@@ -37,6 +37,8 @@ How to run E-net
     
     cd Enet
     
+The help information of the main script scripts/run.py is listed as follows:
+
     python Main.py -h
     
     usage: Main.py [-h][--data-name] [--save-name] [--max-train-num] [--no-cuda] [--missing-ratio] 
