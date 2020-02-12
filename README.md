@@ -30,7 +30,14 @@ In addition, CUDA 8.0 has been used in our project. Although not all dependencie
 
 Input Format
 -----
-An example data format is given in ```Enet/data``` where dataset is in ```*.mat``` format and ```*.score``` is some heuristic scores calculated in advance.
+An example data format is given in ```Enet/data``` where dataset is in ```mat``` format and ```score``` is some heuristic scores calculated in advance.
+
+When using your own dataset, you must provide:
+
+    an N by N adjacency matrix (N is the number of nodes).
+    an N by D feature matrix (D is the dimension of node features).
+    an N by C one-hot label matrix (C is the number of classes).
+    an N by K heuristic score matrix (K is the number of heuristic scores).
 
 How to run E-net
 -----
