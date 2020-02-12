@@ -30,7 +30,7 @@ In addition, CUDA 8.0 has been used in our project. Although not all dependencie
 
 Input Format
 -----
-An example data format is given in ```Enet/data``` where dataset is in ```mat``` format and ```score``` is some heuristic scores calculated in advance. ```Enet/embedding```(OPTIONAL) provides additional node embedding results by Node2vec (https://github.com/aditya-grover/node2vec).
+An example data format is given in ```Enet/data``` where dataset is in ```mat``` format and ```score``` is some heuristic scores calculated in advance. Besides, ```Enet/embedding```(OPTIONAL) provides additional node embedding results by Node2vec (https://github.com/aditya-grover/node2vec).
 
 When using your own dataset, you must provide:
 
